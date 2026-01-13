@@ -1,0 +1,4 @@
+[Mon Jan 12 2026 16:00:03 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/registervalidations.registerSchema.valiate is not a function
+[Mon Jan 12 2026 16:00:14 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/registervalidations.registerSchema.valiate is not a function
+[Mon Jan 12 2026 16:19:52 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/registervalidations.registerSchema.validae is not a function
+[Mon Jan 12 2026 16:21:11 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/registervalidations.registerSchema.validae is not a function
