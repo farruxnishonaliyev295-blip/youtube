@@ -4,8 +4,8 @@ CREATE DATABASE youtbes;
 
 CREATE Table users(
     id SERIAL PRIMARY KEY,
-    username VARCHAR(232) NOT NULL,
-    password VARCHAR(23) NOT NULL,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
     avatar TEXT NOT NULL
 );
 

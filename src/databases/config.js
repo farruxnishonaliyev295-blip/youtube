@@ -14,7 +14,7 @@ const pool = new Pool({
 async function db_connect(){
     try{
         await pool.connect()
-        console.log("Database connected");
+        console.log("✅ Database connected");
     }catch(error){
         console.log(error);
         

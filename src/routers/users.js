@@ -5,8 +5,8 @@ const  router = Router()
 
 router
     .post("/api/register",validation.register,userController.register)
-    // .post("/api/login",validation,userController.login)
+    .post("/api/login",validation.login,userController.login)
 
-    // .get("/api/users".userController.getAllUsers)
+    .get("/api/users",userController.getAllUsers)
 
 export default router
