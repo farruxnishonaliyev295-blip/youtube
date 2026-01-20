@@ -1,0 +1,41 @@
+[Wed Jan 14 2026 00:35:12 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--
+[Wed Jan 14 2026 00:44:45 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--
+[Wed Jan 14 2026 00:52:33 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--
+[Wed Jan 14 2026 01:09:19 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--столбец "username" не существует
+[Wed Jan 14 2026 10:51:16 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--столбец "username" не существует
+[Wed Jan 14 2026 10:53:17 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--столбец "username" не существует
+[Wed Jan 14 2026 13:24:53 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--Cannot read properties of undefined (reading 'name')
+[Wed Jan 14 2026 13:25:22 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--Cannot read properties of undefined (reading 'name')
+[Wed Jan 14 2026 13:26:46 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--Cannot read properties of undefined (reading 'name')
+[Wed Jan 14 2026 13:40:31 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--столбец "username" не существует
+[Wed Jan 14 2026 13:44:23 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--столбец "username" не существует
+[Wed Jan 14 2026 13:47:30 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--files is not defined
+[Wed Jan 14 2026 13:47:59 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--Cannot read properties of undefined (reading 'name')
+[Wed Jan 14 2026 13:51:16 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--столбец "username" не существует
+[Wed Jan 14 2026 13:55:52 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--Cannot read properties of undefined (reading 'name')
+[Wed Jan 14 2026 14:17:03 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--ошибка синтаксиса (примерное положение: "values")
+[Wed Jan 14 2026 14:19:27 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--ошибка синтаксиса (примерное положение: "values")
+[Wed Jan 14 2026 14:20:12 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--
+[Wed Jan 14 2026 15:33:43 GMT+0500 (Узбекистан, стандартное время)]--POST--/api/register--Cannot read properties of undefined (reading 'avatar')
+[Thu Jan 15 2026 10:24:54 GMT+0500 (Узбекистан, стандартное время)]--GET--/api/files/oneUser--jwt expired
+[Thu Jan 15 2026 10:30:45 GMT+0500 (Узбекистан, стандартное время)]--GET--/api/files/oneUser--undefined
+[Mon Jan 19 2026 21:59:52 GMT+0500 (Узбекистан, стандартное время)]--DELETE--/api/files/3--filesService.daleteFile is not a function
+[Mon Jan 19 2026 22:00:55 GMT+0500 (Узбекистан, стандартное время)]--DELETE--/api/files/3--Cannot destructure property 'id' of 'req.userId' as it is undefined.
+[Mon Jan 19 2026 22:02:19 GMT+0500 (Узбекистан, стандартное время)]--DELETE--/api/files/3--Cannot destructure property 'id' of 'req.userId' as it is undefined.
+[Mon Jan 19 2026 22:04:19 GMT+0500 (Узбекистан, стандартное время)]--DELETE--/api/files/3--filesService.daleteFile is not a function
+[Tue Jan 20 2026 09:35:35 GMT+0500 (Узбекистан, стандартное время)]--DELETE--/api/files/3--Cannot destructure property 'id' of 'req.userId' as it is undefined.
+[Tue Jan 20 2026 09:36:04 GMT+0500 (Узбекистан, стандартное время)]--DELETE--/api/files/3--Cannot destructure property 'id' of 'req.userId' as it is undefined.
+[Tue Jan 20 2026 09:36:21 GMT+0500 (Узбекистан, стандартное время)]--DELETE--/api/files/3--Cannot destructure property 'id' of 'req.userId' as it is undefined.
+[Tue Jan 20 2026 12:41:13 GMT+0500 (Узбекистан, стандартное время)]--DELETE--/api/files/3--Cannot destructure property 'id' of 'req.userId' as it is undefined.
+[Tue Jan 20 2026 12:41:43 GMT+0500 (Узбекистан, стандартное время)]--DELETE--/api/files/3--Cannot destructure property 'id' of 'req.userId' as it is undefined.
+[Tue Jan 20 2026 13:05:50 GMT+0500 (Узбекистан, стандартное время)]--PUT--/api/files/6--filesService.fileUpdete is not a function
+[Tue Jan 20 2026 13:10:05 GMT+0500 (Узбекистан, стандартное время)]--PUT--/api/files/6--ошибка синтаксиса (примерное положение: "title")
+[Tue Jan 20 2026 16:23:19 GMT+0500 (Узбекистан, стандартное время)]--GET--/api/files/all--getAllFiles is not defined
+[Tue Jan 20 2026 16:24:21 GMT+0500 (Узбекистан, стандартное время)]--GET--/api/files/all--getAllFiles is not defined
+[Tue Jan 20 2026 16:35:53 GMT+0500 (Узбекистан, стандартное время)]--GET--/api/files/all?title=salom--Cannot read properties of undefined (reading 'rows')
+[Tue Jan 20 2026 16:39:19 GMT+0500 (Узбекистан, стандартное время)]--GET--/api/files/all?title=salom--Client was passed a null or undefined query
+[Tue Jan 20 2026 16:41:17 GMT+0500 (Узбекистан, стандартное время)]--GET--/api/files/all?title=salom--ошибка синтаксиса (примерное положение: "inner")
+[Tue Jan 20 2026 17:06:13 GMT+0500 (Узбекистан, стандартное время)]--GET--/files/1768453418910.mp4--ENOENT: no such file or directory, open 'D:\node_js\yuotbe\src\uploads\vidoes\1768453418910.mp4'
+[Tue Jan 20 2026 17:07:50 GMT+0500 (Узбекистан, стандартное время)]--GET--/file/1768453418910.mp4--ENOENT: no such file or directory, open 'D:\node_js\yuotbe\src\uploads\vidoes\1768453418910.mp4'
+[Tue Jan 20 2026 17:13:42 GMT+0500 (Узбекистан, стандартное время)]--GET--/file/1768453418910.mp4--filePaht is not defined
+[Tue Jan 20 2026 17:13:46 GMT+0500 (Узбекистан, стандартное время)]--GET--/file/1768453418910.mp4--filePaht is not defined
