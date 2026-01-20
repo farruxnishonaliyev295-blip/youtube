@@ -67,6 +67,17 @@ class FileController{
         }
     }
 
+    async download(req,res,next){
+        try {
+            const data =await filesService.download(req)
+            if(data){
+                return res.status(data.status).download(data.filePaht)
+            }
+        } catch (error) {
+            next(error)
+        }
+    }
+
 
 
 }

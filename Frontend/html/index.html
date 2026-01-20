@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -24,8 +24,8 @@
                 <input id="inputSearch" list="datalist" type="text" placeholder="Search" class="search-input">
                 <datalist id="datalist">
                     <!-- bu fake data -->
-                    <!-- <option value="Falonchiga otvet">
-                    <option value="nima gap"> -->
+                    <option value="Falonchiga otvet">
+                    <option value="nima gap">
                 </datalist>
                 <button type="submit" class="search-btn hover-after">
                     <svg viewbox="0 0 24 24" focusable="false" style="pointer-events: none; display: block; width: 20px; height: 25px;"><g><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></g></svg>
@@ -50,8 +50,8 @@
                 <button class="hover-after">
                     <svg viewbox="0 0 24 24" focusable="false" style="pointer-events: none; display: block; width: 30px; height: 24px;"><g><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path></g></svg>
                 </button>
-                <a id="list" href="./register.html">
-                    <!-- <img class="avatar-img" src="./img/avatar.jpg" alt="avatar-img" width="32px" height="32px"> -->
+                <a id="list" href="/register">
+                    <img class="avatar-img" src="./img/avatar.jpg" alt="avatar-img" width="32px" height="32px">
                 </a>
             </section>
         </header>
@@ -98,7 +98,8 @@
             </div>
         </main>
     </div>
-    <script src="/js/request.js"></script>
+    <!-- <script src="/js/request.js"></script> -->
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="./js/index.js"></script>
 </body>
 </html>

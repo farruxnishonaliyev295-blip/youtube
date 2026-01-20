@@ -73,6 +73,7 @@ class FileService{
         filePaht
       }
     }
+
     async creatrFile(req,next){
         const {title, userId} = req.body
         const {file} = req.files; 
@@ -108,6 +109,7 @@ class FileService{
             message:"file success created"
         }
     }
+
     async fileUpdate(req,next){
       const { id } = req.user
       const { fileId } = req.params
@@ -161,6 +163,35 @@ class FileService{
   };
     }
 
+    async download(req){
+      const {file_name} = req.params
+      
+      const existFile = [
+        ".mp4",
+        ".webm",
+        ".mpeg",
+        ".avi",
+        ".mkv",
+        ".m4v",
+        ".ogm",
+        ".mov",
+        ".mpg"
+      ];
+      
+      let filePaht
+
+      if(existFile.includes(extname(file_name))){
+        filePaht = join(process.cwd(),'src','uploads','videos',file_name)
+      }else{
+        throw new NotFountError(404,"File name not fount")
+      }
+
+      return{
+        status:200,
+        filePaht
+      }
+    
+    }
 
 }
 

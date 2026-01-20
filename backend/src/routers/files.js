@@ -13,6 +13,8 @@ router
 
     .get("/file/:file_name",fileController.getFile)
 
+    .get("/api/file/download/:file_name",fileController.download)
+
 
     .put("/api/files/:fileId",checkToken,validation.title,fileController.fileUpdate)
 

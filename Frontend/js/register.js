@@ -1,0 +1,17 @@
+async function register(e){
+    e.preventDefault()
+
+    const formData = new FormData()
+    formData.append("username", usernameInput.value)
+    formData.append("password", passwordInput.value)
+    formData.append("avatar", uploadInput.files[0])
+
+    const newUser = await axios.post("http://localhost:4545/api/register",formData)
+
+    if(newUser.data.status == 201){
+        window.location = "/"
+        
+    }
+}
+
+submitButton.onclick = register
