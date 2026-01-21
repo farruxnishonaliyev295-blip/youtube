@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="./css/material-design-iconic-font.min.css">
 </head>
 <body> 
+    <script>
+        const token = window.localStorage.getItem("accessToken")
+        if(token){
+            window.location = "/admin"
+        }
+    </script>
     <div class="container">
         <div class="wrapper">
             <h1 class="title">Registration Page</h1>

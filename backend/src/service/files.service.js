@@ -75,7 +75,8 @@ class FileService{
     }
 
     async creatrFile(req,next){
-        const {title, userId} = req.body
+        const {title} = req.body
+        const {id} = req.user        
         const {file} = req.files; 
 
         const existFile = [".mp4",".webm",".mpeg",".avi",".mkv",".m4v",".ogm",".mov",".mpg"]
@@ -91,7 +92,7 @@ class FileService{
             file.size =  Math.floor((file.size / 1024 / 1024))
         }
         
-        const existUser = await pool.query("select * from users where id=$1",[userId])
+        const existUser = await pool.query("select * from users where id=$1",[id])
         if(!existUser.rowCount){
             throw new NotFountError(404, "User not fount")
         }
@@ -102,7 +103,7 @@ class FileService{
             }
         })
 
-        await pool.query("insert into files(title,file_name,size,user_id) values($1,$2,$3,$4)",[title,fileName,file.size,userId,])
+        await pool.query("insert into files(title,file_name,size,user_id) values($1,$2,$3,$4)",[title,fileName,file.size,id,])
     
         return{
             status:201,

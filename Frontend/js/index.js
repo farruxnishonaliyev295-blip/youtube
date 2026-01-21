@@ -1,5 +1,13 @@
 const navbarList =document.querySelector(".navbar-list")
 const ifremesList = document.querySelector(".iframes-list")
+
+
+const avatar = window.localStorage.getItem("avatar")
+
+list.innerHTML +=`
+        <img class="avatar-img" src="http://localhost:4545/file/${avatar ? avatar : "avatar.jpg"}" alt="avatar-img" width="32px" height="32px">
+`
+
 async function getUsers() {
     let users = await axios.get("http://localhost:4545/api/users")
     users = users.data.data
@@ -15,8 +23,20 @@ async function getUsers() {
     }
 }
 
+function voice(){
+    
+}
+
+inputSearch.onkeydown = (e) =>{
+    if(e.keyCode == 13){
+        ifremesList.innerHTML = ""
+        getAllFiles()
+    }
+}
+
 async function getAllFiles(){
-    let files = await axios.get("http://localhost:4545/api/files/all")
+    const search = inputSearch.value
+    let files = await axios.get(`http://localhost:4545/api/files/all?title=${search}`)
     files = files.data.files;
 
     for (const file of files) {

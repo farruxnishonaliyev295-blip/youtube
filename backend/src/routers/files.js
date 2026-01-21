@@ -5,7 +5,7 @@ import checkToken from "../middleware/checkToken.js"
 const  router = Router()
 
 router
-    .post("/api/files",validation.files,fileController.createFile)
+    .post("/api/files",checkToken,validation.files,fileController.createFile)
 
     .get("/api/files/oneUser",checkToken,fileController.getUserFiles)
  

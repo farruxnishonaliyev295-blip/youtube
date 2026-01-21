@@ -1,11 +1,13 @@
 import { NotFountError, UnauthorizedError } from "../utils/error.js"
 import pool from "../databases/config.js";
 import JWT from "jsonwebtoken"
+
+
 export default async (req,res,next)=>{
-    // console.log(req.headers);
-    
     try {
-        const {token} = req.headers;
+        let {authorization} = req.headers;
+        let token = authorization.split(" ")[1];
+        
     
     if(!token){
         throw new UnauthorizedError(401,"Don't send without token")

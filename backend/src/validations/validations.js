@@ -12,7 +12,6 @@ class Validations{
     })
     fileSchema = Joi.object({
         title:Joi.string().min(3).max(20).required(),
-        userId:Joi.number().required()
     })
     titleSchema = Joi.object({
         title:Joi.string().min(3).max(20).required(),

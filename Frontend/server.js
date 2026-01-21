@@ -20,5 +20,13 @@ app.get("/js/index.js",(req,res) =>{
 app.get("/js/register.js",(req,res) =>{   
     res.sendFile(join(process.cwd(),"js","register.js"))
 })
-
-app.listen(9090,()=> console.log("Front server is running")) 
+app.get("/js/admin.js",(req,res) =>{   
+    res.sendFile(join(process.cwd(),"js","admin.js"))
+})
+app.get("/js/login.js",(req,res) =>{   
+    res.sendFile(join(process.cwd(),"js","login.js"))
+})
+app.get("/admin", (req, res) => {
+    res.sendFile(join(process.cwd(), "html", "admin.html"))
+})
+app.listen(9090,()=> console.log("Front server is running"))

@@ -9,7 +9,10 @@ async function register(e){
     const newUser = await axios.post("http://localhost:4545/api/register",formData)
 
     if(newUser.data.status == 201){
+        window.localStorage.setItem("accessToken", newUser.data.accessToken)
+        window.localStorage.setItem("avatar", newUser.data.avatar)
         window.location = "/"
+        console.log(newUser);
         
     }
 }
